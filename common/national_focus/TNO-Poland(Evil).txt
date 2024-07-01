@@ -1,0 +1,67 @@
+focus_tree = {
+	id = TNO-Generalgouvernement
+    continuous_focus_position = { x = -40 y = 1310 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GGN
+			}
+		}
+	
+	
+	focus = {
+		id = GGN_Troubling_times
+		icon = GFX_POL_general_government
+		x = 3
+		y = 0
+		cost = 3
+
+		available = {
+
+		}
+		completion_reward = {
+			add_manpower = -100
+			}
+		}
+	
+	
+	focus = {
+		id = GGN_Not_lost
+		icon = GFX_POL_retribution
+		prerequisite = { focus = GGN_Troubling_times}
+		mutually_exclusive = { focus = GGN_contact_germans}
+		x = 3	
+		y = 1
+		cost = 5
+		completion_reward = {
+        10 = {
+		set_demilitarized_zone = yes
+		}
+		}
+		}
+	focus = {
+		id = GGN_reaching_out
+		icon = GFX_POL_retribution
+		prerequisite = { focus = GGN_Not_lost}
+		x = 3	
+		y = 2
+		cost = 3
+		completion_reward = {
+        10 = {
+		set_demilitarized_zone = yes
+		}
+		}
+	}
+	}
+	
+	
+
+
+
+
+
+
+
+
+

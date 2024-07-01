@@ -1,0 +1,20 @@
+﻿l_english:
+ XIN_communist_party:0 "CPC-D"
+ XIN_communist_party_long:0 "CCP-Dengists"
+ XIN_conservatism_party:0 "KMT-R"
+ XIN_conservatism_party_long:0 "KMT-Reformist"
+ XIN_paternalism_party:0 "KMT"
+ XIN_paternalism_party_long:0 "Koumintang"
+ XIN_despotism_party:0 "Xinjiang Junfa"
+ XIN_despotism_party_long:0 "Xinjiang Junfa"
+
+
+ #Post-GAW Cosmetic Tag
+ XIN_power_vacuum: "Provisional Government of Xinjiang"
+ POLITICS_XIN_POWER_VACUUM_DESC: "" #
+ POLITICS_XIN_CHIANG_DESC: "yay"
+ XIN_IJA_despotism_party: "Xinjiang Linshi Shengzhengfu"
+ XIN_IJA_despotism_party_long: "Xinjiang Linshi Shengzhengfu"
+ 
+
+ 

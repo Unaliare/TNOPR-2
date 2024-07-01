@@ -1,0 +1,99 @@
+### Peasant Uprising ###
+
+OMO_reduce_peasant_uprising = {
+	custom_effect_tooltip = OMO_deal_with_peasant_uprisings_tt
+	hidden_effect = {
+		if = {
+			limit = {
+				has_idea = OMO_peasant_uprisings
+			}
+			swap_ideas = {
+				remove_idea = OMO_peasant_uprisings
+				add_idea = OMO_peasant_uprisings_2
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = OMO_peasant_uprisings_2
+			}
+			swap_ideas = {
+				remove_idea = OMO_peasant_uprisings_2
+				add_idea = OMO_peasant_uprisings_3
+			}
+		}
+	}
+}
+
+OMO_clear_peasant_uprising = {
+	custom_effect_tooltip = OMO_deal_with_peasant_uprisings_tt
+	hidden_effect = {
+		if = {
+			limit = {
+				has_idea = OMO_peasant_uprisings
+			}
+			remove_ideas = OMO_peasant_uprisings
+		}
+		else_if = {
+			limit = {
+				has_idea = OMO_peasant_uprisings_2
+			}
+			remove_ideas = OMO_peasant_uprisings_2
+		}
+		else_if = {
+			limit = {
+				has_idea = OMO_peasant_uprisings_3
+			}
+			remove_ideas = OMO_peasant_uprisings_3
+		}
+	}
+}
+
+### Temptations of the Sinner ###
+
+OMO_give_in_to_temptation = {
+	add_popularity = {
+		ideology = communist
+		popularity = 0.08
+	}
+	add_to_variable = { OMO_sudoplatov_influence = 25 }
+	clamp_variable = { var = OMO_sudoplatov_influence min = 0 max = 100 }
+	custom_effect_tooltip = OMO_sudoplatov_influence_increase_tt
+	if = {
+		limit = {
+			check_variable = { OMO_sudoplatov_influence > 76 }
+		}
+		country_event = { id = OMO.28 days = 1 }
+	}
+}
+
+OMO_medium_temptation = {
+	add_popularity = {
+		ideology = communist
+		popularity = 0.06
+	}
+	add_to_variable = { OMO_sudoplatov_influence = 10 }
+	clamp_variable = { var = OMO_sudoplatov_influence min = 0 max = 100 }
+	custom_effect_tooltip = OMO_sudoplatov_influence_increase_tt
+	if = {
+		limit = {
+			check_variable = { OMO_sudoplatov_influence > 76 }
+		}
+		country_event = { id = OMO.28 days = 1 }
+	}
+}
+
+OMO_minor_temptation = {
+	add_popularity = {
+		ideology = communist
+		popularity = 0.03
+	}
+	add_to_variable = { OMO_sudoplatov_influence = 5 }
+	clamp_variable = { var = OMO_sudoplatov_influence min = 0 max = 100 }
+	custom_effect_tooltip = OMO_sudoplatov_influence_increase_tt
+	if = {
+		limit = {
+			check_variable = { OMO_sudoplatov_influence > 76 }
+		}
+		country_event = { id = OMO.28 days = 1 }
+	}
+}

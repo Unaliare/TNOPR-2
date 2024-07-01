@@ -1,0 +1,79 @@
+############################
+## Italian East Africa Events
+############################
+
+add_namespace = IEA
+
+country_event = { #The Question of Succession - Cerulli
+	id = IEA.41
+	immediate = {log = "[GetDateText]: [Root.GetName]: event IEA.41"}
+	title = IEA.41.t
+	desc = IEA.41.d
+	picture = GFX_news_event_IEA_guillet
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #Cerulli
+		name = IEA.41.a
+		set_country_flag = IEA_cerulli_succession
+		promote_character = IEA_Enrico_Cerulli
+		ITA = {
+			hidden_effect = {
+				country_event = { id = empiremanagement_IEA.2 days = 5 }
+			}
+		}
+	}
+}
+
+country_event = { #The Question of Succession - Guillet
+	id = IEA.42
+	immediate = {log = "[GetDateText]: [Root.GetName]: event IEA.41"}
+	title = IEA.42.t
+	desc = IEA.42.d
+	picture = GFX_news_event_IEA_guillet
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #Guillet
+		name = IEA.42.b
+		set_country_flag = IEA_guillet_succession
+		set_politics = {
+			ruling_party = despotism
+		}
+		add_popularity = {
+			ideology = despotism
+			popularity = 0.35
+		}
+		promote_character = IEA_Amedeo_Guillet
+		ITA = {
+			hidden_effect = {
+				country_event = { id = empiremanagement_IEA.2 days = 5 }
+			}
+		}
+	}
+}
+country_event = { #The Question of Succession - Correntia
+	id = IEA.43
+	immediate = {log = "[GetDateText]: [Root.GetName]: event IEA.43"}
+	title = IEA.43.t
+	desc = IEA.43.d
+	picture = GFX_news_event_IEA_guillet
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #Correntia
+		name = IEA.43.b
+        COR = {
+      	annex_country {
+		target = IEA
+			transfer_troops = yes
+			}
+						}
+		COR = { change_tag_from = IEA }
+		}
+	
+	}
+}

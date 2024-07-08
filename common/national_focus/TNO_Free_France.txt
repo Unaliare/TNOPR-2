@@ -500,6 +500,7 @@ focus = {
 		cost = 1
 
 		available = {
+		has_government = despotism
 
 		}
 		completion_reward = {
@@ -531,9 +532,26 @@ focus = {
 		id = FFR_Gaullism_forevermore
         prerequisite ={ focus =  FFR_Keep_De_Gaulle }
 		
-		icon = GFX_focus_fra_le_deluge
+		icon = GFX_BRA_A_Deal_With_the_Free_France
 		x = -11
 		y = 5
+		cost = 10
+
+		available = {
+        has_government = paternalism
+		}
+		completion_reward = {
+        add_stability = .09
+		}
+			}
+			
+	focus = {
+		id = FFR_Native_Autonomy
+        prerequisite ={ focus =  FFR_Gaullism_forevermore }
+		
+		icon = COG_icon_conscript_the_natives
+		x = -11
+		y = 6
 		cost = 10
 
 		available = {
@@ -544,7 +562,51 @@ focus = {
 		remove_ideas = FFR_native_rebellion
 		}
 			}
-			
+	focus = {
+		id = FFR_Our_Promise_To_Democracy
+        prerequisite ={ focus =  FFR_Native_Autonomy }
+		
+		icon = GFX_ENG_Onwards_to_Democracy
+		x = -13
+		y = 7
+		cost = 10
+
+		available = {
+        has_government = paternalism
+		}
+		completion_reward = {
+        add_stability = .09
+		country_event = { id = FFR_TNOPR.1}
+		}
+			}
+	focus = {
+		id = FFR_Overtures_To_Foreign_Lands
+        prerequisite ={ focus =  FFR_Native_Autonomy }
+		
+		icon = GFX_focus_fra_le_deluge
+		x = -10
+		y = 7
+		cost = 3
+		completion_reward = {
+        add_stability = .09
+		}
+			}
+   focus = {
+		id = FFR_A_revolution_Reignited
+        prerequisite ={ focus =  FFR_Our_Promise_To_Democracy }
+		prerequisite ={ focus =  FFR_Overtures_To_Foreign_Lands }
+		
+		icon = GFX_focus_fra_le_deluge
+		x = -11
+		y = 8
+		cost = 10
+
+		completion_reward = {
+        add_stability = .09
+		add_ideas = 
+		FFR_The_French_Revolution
+		}
+			}
 		focus = {
 		id = FFR_French_Sahara?
         prerequisite ={ focus =  FFR_eternal_restoration }
@@ -566,8 +628,74 @@ focus = {
 		}
 			}
 
-			}	
+			}
 
-			
+   focus = {
+		id = FFR_France_on_the_World_Stage		
+	icon = GFX_focus_fra_le_deluge
+		x = 20
+		y = 0
+		cost = 10
+		available = {
+		controls_state = 21
+		}
+		completion_reward = {
+
+		}
+			}			
+
+  focus = {
+		id = FFR_Fate_of_West_Africa
+        prerequisite ={ focus =  FFR_France_on_the_World_Stage }
+		
+		icon = GFX_focus_fra_le_deluge
+		x = 18
+		y = 1
+		cost = 10
+
+		completion_reward = {
+		}
+			}
+  focus = {
+		id = FFR_Marching_West
+        prerequisite ={ focus =  FFR_France_on_the_World_Stage }
+		
+		icon = GFX_focus_fra_le_deluge
+		x = 22
+		y = 1
+		cost = 10
+
+		completion_reward = {
+		}
+			}
+  focus = {
+		id = FFR_Ultamatum_to_Iberia
+        prerequisite ={ focus =  FFR_Marching_West}
+		
+		icon = GFX_focus_fra_le_deluge
+		x = 22
+		y = 2
+		cost = 10
+
+		completion_reward = {
+		}
+			}
+  focus = {
+		id = FFR_Claim_the_Italian_Territories
+        prerequisite ={ focus =  FFR_Ultamatum_to_Iberia}
+		
+		icon = GFX_focus_fra_le_deluge
+		x = 22
+		y = 3
+		cost = 10
+
+		completion_reward = {
+		add_state_core = 735
+		add_state_core = 1
+		add_state_claim = 458
+		add_state_claim = 665
+		add_state_claim = 1142
+		}
+			}							
 			
 			

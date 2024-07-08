@@ -445,6 +445,16 @@ create_country_leader = {
 		#
 	}
 }
+create_country_leader = {
+	name = "François Mitterrand"
+	desc = ""
+	picture = Mitterand.dds
+	expire = "1965.1.1"
+	ideology = socialist_syndicalism_subtype
+	traits = {
+		#
+	}
+}
 
 create_country_leader = {
 	name = "Napoleon VI"
@@ -452,6 +462,28 @@ create_country_leader = {
 	picture = Napoleon_Liberation.dds
 	expire = "1965.1.1"
 	ideology = conservatism_paternalistic_conservatism_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Georges Pompidou"
+	desc = ""
+	picture = Pompidou.dds
+	expire = "1965.1.1"
+	ideology = liberal_conservatism_moderate_technocracy_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Jacques Duclos"
+	desc = ""
+	picture = Duclos.dds
+	expire = "1965.1.1"
+	ideology = communist_national_communism_subtype
 	traits = {
 		#
 	}

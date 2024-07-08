@@ -110,19 +110,6 @@ characters = {
 			id = -1
 		}
 	}
-	GBE_Hubert_Maga = {
-		name = GBE_Hubert_Maga
-		portraits = {
-			civilian = { large = "gfx/leaders/GBE/Portrait_Gbeland_Hubert_Maga.dds" }
-		}
-		country_leader = {
-			#desc = "POLITICS_HUBERT_MAGA_DESC"
-			expire = "1970.1.1"
-			ideology = conservatism_paternalistic_conservatism_subtype
-			traits = { }
-			id = -1
-		}
-	}
 	GBE_Christophe_Soglo = {
 		name = GBE_Christophe_Soglo
 		portraits = {

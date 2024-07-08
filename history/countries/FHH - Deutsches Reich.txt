@@ -1,5 +1,5 @@
 capital = 37
-oob = "HWL_FHH"
+set_oob = "HWL_FHH"
 # Vacant
 recruit_character = FHH_Generic_Vacant
 recruit_character = FHH_henning_von_tresckow
@@ -7,8 +7,6 @@ recruit_character = FHH_Claus_Von_Stauffenberg
 recruit_character = FHH_adolf_heusinger
 recruit_character = FHH_hans_speidel
 fill_empty_minister_nochecks = yes # Please remove if you're adding ministers.
-
-
 
 	##POLITICAL LAWS##
 	tno_political_parties_one_party_state

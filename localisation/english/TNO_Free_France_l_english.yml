@@ -6,8 +6,8 @@
   FFR_PresidentlTitle: "President"
 
   # Parties
-  FFR_communist_party: "RO"
-  FFR_communist_party_long: "Résistance Ouvrière"
+  FFR_communist_party: "PCF"
+  FFR_communist_party_long: "Parti communiste français"
   FFR_socialist_party: "FSU"
   FFR_socialist_party_long: "Front Socialiste Uni"
   FFR_progressivism_party: "FSU"
@@ -54,10 +54,12 @@
   FFR_the_reclamation: "The Reclamation"
   FFR_Reclamation_DynamicModifier: "The Reclamation"
   FFR_the_reclamation_desc: "§FDivision Organisation: [?FFR_Reclamation_Modifier_army_org_factor|1%+=]\nNon-Combat Out of Supply Penalties: [?FFR_Reclamation_Modifier_out_of_supply_factor|1%-=]\nDivision Recovery Rate: [?FFR_Reclamation_Modifier_army_morale_factor|1%+=]\nWar Support: [?FFR_Reclamation_Modifier_war_support_factor|1%+=]\nDivision Defense: [?FFR_Reclamation_Modifier_army_defence_factor|1%+=]\nPlanning Speed: [?FFR_Reclamation_Modifier_planning_speed|1%+=]\n--------------§!\nWhat our enemies, deserters and even allies deemed impossible is finally happening. Our troops are landing across the shores of France! We are not longer a rump state kept alive only by the weight of our former colonies, the hearts of our men and the sharp mind of our leader, we are the liberators of France!\n\nWe have no illusions that this is not a do or die situation, if we fail all it's over, but it we triumph our men will collect the fruits of their labor. The old ones will reconnect with their families and friends, and the young ones will grow old and die in their fatherland. Their tired eyes will be free to contemplate the beauty of Paris and the Seine for as long as they desire."
-
+  FFR_The_French_Revolution: "The French Revolution reborn!"
+  FFR_The_French_Revolution_desc: ""
   FRD_aiding_the_reclamation: "Aiding the Reclamation"
   FRD_aiding_the_reclamation_desc: "After much consideration from our forces, we have decided to let the Free French forces land in the territory we control. This has provided not just additional forces and aid in our fight against the illegitimate Vichy government, but also a boost in the morale of our forces and citizens. However, this aid has also brought unwanted attention by the USA and Germans, raising the stakes on the possibility of our victory."
-  
+  FFR_A_revolution_Reignited: "A Revolution reignited"
+  FFR_A_revolution_Reignited_desc: "With the preparations and operations laid, we can finally proclaim ourselves the true resistance!"
   ## old stuff ##
   ##7 Copies of the military administration idea due to coding reasons, - Oh may the mercifull lord save us
   #FFR_military_administrationTRAINING_AND_NOTHING_ELSE:0 "Military Administration"
@@ -207,7 +209,19 @@
   FFR_eternal_restoration_desc: "It has been done, France has been reconquered and our humiliation has been forgotten. Now we march on the streets of Bourdeaux as the liberators of France. Now we shall set our sights to securing our future as the Empire and going outwards."
   FFR_Return: "The Reclamation wars"
   FFR_Return_desc: "It's time to finally start the great fight to liberate France. We must liberate the Mainland ONCE and FOR ALL!"
+  FFR_Gaullism_forevermore_desc: "Well we have done it. De Gaulle has officially solidified his hold over the French Republic, now we can go through the Gaullist reforms. Viva la Francaise Libre!"
+  FFR_Gaullism_forevermore: "Gaullism Forevermore"
+  FFR_Native_Autonomy: "Native Autonomy"
+  FFR_Native_Autonomy_desc: "Although we have defeated Napoleon in the elections, his ideas are still usable. We shall grant autonomy to the West Africans in exchange for their undying loyalty,"
+  FFR_Unite_Resistance: "Unite the Resistance"
+  FFR_Unite_Resistance_desc: "Through thorough planning, we have decided to unite with the OTHER French resistance to form a popular front against the Vichy Regime and communists."
+  FFR_Our_Promise_To_Democracy: "Our promise to Liberté"
+  FFR_Our_Promise_To_Democracy_desc: "Even if De Gaulle has proclaimed supreme victory over the Free French leadership, he wishes to stand down. We shall respect his wishes and hold a Farewell Party.."
+  FFR_Overtures_To_Foreign_Lands: "Overtures to Foreign Lands"
+  FFR_Overtures_To_Foreign_Lands_desc: "
   ## Events ##
+  FFR_TNOPR.1.t: "The Retirement Party"
+  FFR_TNOPR.d: "
   
   #Reconstruction events
   free_france.4.t: "The election"

@@ -9,6 +9,9 @@
  ## MAKE SURE THAT WHATEVER YOU ADD CONFORMS TO THE ALPHABETICAL ORDER
  ## If not then I'm going to appear on your bedroom at 2AM brandishing an axe
 
+ NRL: "Tura"
+ NRL_ADJ: "Russian"
+ NRL_DEF: "Tura"
  # A
  CSA: "Communist States of America"
  CSA_DEF: "The Communist States of America"
@@ -649,8 +652,8 @@
  OMI_DEF: "the Imamate of Oman"
  OMI_ADJ: "Omani"
 
- OMO: ""
- OMO_DEF: ""
+ OMO: "Omolon"
+ OMO_DEF: "Omolon"
  OMO_ADJ: "Siberian"
  
  OMS: "Omsk"

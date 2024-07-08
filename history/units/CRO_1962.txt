@@ -105,4 +105,40 @@ units = {
 		division_template = "Motorized Division"
 		start_experience_factor = 0.2
 	}
+		division = {
+		name = "Legione Croata Autotrasportabile"
+		location = 6983
+		division_template = "Motorized Division"
+		start_experience_factor = 0.2
+	}
+		division = {
+		name = "Legione Croata Autotrasportabile"
+		location = 6983
+		division_template = "Motorized Division"
+		start_experience_factor = 0.2
+	}
+		division = {
+		name = "Legione Croata Autotrasportabile"
+		location = 6983
+		division_template = "Motorized Division"
+		start_experience_factor = 0.2
+	}
+		division = {
+		name = "Legione Croata Autotrasportabile"
+		location = 6983
+		division_template = "Motorized Division"
+		start_experience_factor = 0.2
+	}
+		division = {
+		name = "Legione Croata Autotrasportabile"
+		location = 6983
+		division_template = "Motorized Division"
+		start_experience_factor = 0.2
+	}
+		division = {
+		name = "Legione Croata Autotrasportabile"
+		location = 6983
+		division_template = "Motorized Division"
+		start_experience_factor = 0.2
+	}
 }

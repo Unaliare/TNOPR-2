@@ -8,7 +8,6 @@ recruit_character = GBE_Benoit_Koffi_Sinzogan
 recruit_character = GBE_Justin_Ahomadegbe_Tometin
 recruit_character = GBE_Iropa_Maurice_Kouandete
 recruit_character = GBE_Sourou_Migan_Apithy
-recruit_character = GBE_Hubert_Maga
 recruit_character = GBE_Christophe_Soglo
 recruit_character = GBE_Mathieu_Kerekou
 recruit_character = GBE_Ibrahim_Babangida
@@ -102,4 +101,14 @@ set_popularities = {
 	despotism = 63
 	fascism = 11
 	
+}
+create_country_leader = {
+	name = "Jacques Massu"
+	desc = ""
+	picture = Massu.dds
+	expire = "1965.1.1"
+	ideology = conservatism_paternalistic_conservatism_subtype
+	traits = {
+		#
+	}
 }

@@ -10,6 +10,75 @@ add_namespace = france_reclamation.proxy.USA
 add_namespace = france_reclamation.proxy.GER
 add_namespace = france_reclamation.proxy.IBR
 add_namespace = FFRnews
+add_namespace = FFR_TNOPR
+
+country_event = { # Retirement Party wooo
+	id = FFR_TNOPR.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event FFR_TNOPR.1"}
+	title = FFR_TNOPR.1.t
+	desc = FFR_TNOPR.1.desc
+	picture = GFX_report_event_GER_ostsonne
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = FFR_TNOPR.1.a
+    retire_character = FFR_Charles_de_Gaulle
+
+		}
+	option = {
+		name = FFR_TNOPR.1.b
+    retire_character = FFR_Charles_de_Gaulle
+	set_politics = {
+	ruling_party = socialist
+
+		}
+	}
+	option = {
+		name = FFR_TNOPR.1.c
+    retire_character = FFR_Charles_de_Gaulle
+	set_politics = {
+	ruling_party = liberalism
+
+		}
+	}
+}
+
+country_event = { # OOh West Africa
+	id = FFR_TNOPR.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event FFR_TNOPR.2"}
+	title = FFR_TNOPR.2.t
+	desc = FFR_TNOPR.2.desc
+	picture = GFX_report_event_GER_ostsonne
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = FFR_TNOPR.1.a
+    CAO = {
+	set_cosmetic_tag = CAO_FFR_WA
+	transfer_state = 825
+	transfer_state = 1188
+	transfer_state = 883
+	transfer_state = 882
+	transfer_state = 941
+	transfer_state = 827
+	transfer_state = 274
+	transfer_state = 833
+	}
+
+		}
+	option = {
+		name = FFR_TNOPR.1.b
+    retire_character = FFR_Charles_de_Gaulle
+	set_politics = {
+	ruling_party = socialist
+
+		}
+	}
+}
 
 country_event = { # de gaulle death
 	id = free_france.1

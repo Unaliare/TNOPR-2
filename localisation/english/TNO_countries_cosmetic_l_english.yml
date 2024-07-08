@@ -1,5 +1,8 @@
 ﻿l_english:
 
+ FHH_HRE: "Heiliges Römisches Reich"
+ FHH_GRE_DEF: "The Holy Roman Empire"
+
  GER_Goering: "Großgermanischer Bund"
  GER_Goering_DEF: "The Greater Germanic Federation"
  
@@ -11,6 +14,9 @@
 
  CAO_FFR: "French Administration of The Sahara"
  CAO_FFR_DEF: "The French Administration of The Sahara"
+ 
+ CAO_FFR_WA: "French Administration of West Africa"
+ CAO_FFR__WA_DEF: "The French Administration of West Africa"
  
  BRG_Frankreich: "SS-Ordensstaat Frankreich"
  BRG_Frankreich_DEF: "Der SS-Ordenstaat der Frankreich"

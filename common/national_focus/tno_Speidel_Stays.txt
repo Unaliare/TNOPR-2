@@ -131,6 +131,7 @@ focus_tree = {
 			
 			}
 		}
+		}
     focus = {
 		id = FHH_Across_the_Ocean
 		icon = GFX_OFN_handshake

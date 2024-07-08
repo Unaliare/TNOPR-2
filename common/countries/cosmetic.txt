@@ -1,3 +1,8 @@
+FHH_HRE = {
+	color = rgb {127 106 0}
+	color_ui = rgb { 127 106 0 }
+}
+
 OST_GER = {
 	color = rgb { 102 100 86 }
 	color_ui = rgb { 102 100 86 }
@@ -2379,6 +2384,10 @@ STC_banzer_peace = {
 }
 ##
 FRA_FFR = {
+	color = rgb { 105 114 228 }
+	color_ui = rgb { 105 114 228 }
+}
+CAO_FFR_WA = {
 	color = rgb { 105 114 228 }
 	color_ui = rgb { 105 114 228 }
 }

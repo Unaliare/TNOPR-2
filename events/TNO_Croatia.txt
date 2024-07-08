@@ -139,6 +139,7 @@ country_event = { # Tito takes power
 
 	option = { # More partisans come up
 		name = cropartisans.12.a
+		load_focus_tree = Croatia_Tito
 		hidden_effect = {
 			leave_faction = yes
 			ITA = {

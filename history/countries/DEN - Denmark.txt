@@ -2,6 +2,7 @@ capital = 37
 
 # Vacant
 recruit_character = DEN_Generic_Vacant
+set_cosmetic_tag = DEN_RK
 
 # Country Leaders
 recruit_character = DEN_Werner_Best

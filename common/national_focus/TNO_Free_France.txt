@@ -512,23 +512,6 @@ focus = {
 		}
 			}
 		focus = {
-		id = FFR_on_the_streets_of_france
-        prerequisite ={ focus =  FFR_eternal_restoration }
-		
-		icon = GFX_focus_fra_le_deluge
-		x = 9
-		y = 11
-		cost = 2
-
-		available = {
-
-		}
-		completion_reward = {
-        add_stability = -.09
-		add_ideas = {FFR_communist_partisans}
-		}
-			}
-		focus = {
 		id = FFR_Gaullism_forevermore
         prerequisite ={ focus =  FFR_Keep_De_Gaulle }
 		
@@ -544,6 +527,7 @@ focus = {
         add_stability = .09
 		}
 			}
+	
 			
 	focus = {
 		id = FFR_Native_Autonomy
@@ -583,7 +567,7 @@ focus = {
 		id = FFR_Overtures_To_Foreign_Lands
         prerequisite ={ focus =  FFR_Native_Autonomy }
 		
-		icon = GFX_focus_fra_le_deluge
+		icon = GFX_focus_focus_fra_ratify_stresa
 		x = -10
 		y = 7
 		cost = 3
@@ -596,7 +580,7 @@ focus = {
         prerequisite ={ focus =  FFR_Our_Promise_To_Democracy }
 		prerequisite ={ focus =  FFR_Overtures_To_Foreign_Lands }
 		
-		icon = GFX_focus_fra_le_deluge
+		icon = GFX_focus_focus_fra_revolution_utmost
 		x = -11
 		y = 8
 		cost = 10
@@ -607,12 +591,144 @@ focus = {
 		FFR_The_French_Revolution
 		}
 			}
+	focus = {
+		id = FFR_Pompediou_Into_the_Spotlight
+		available = {
+		NOT = {
+		country_exists = FRS
+		}
+		has_government = liberal_conservatism
+		}
+		icon = GFX_generic_liberal_constitution
+		x = -11
+		y = 10
+		cost = 2
+
+		completion_reward = {
+        add_stability = .09
+		}
+			}
+	focus = {
+		id = FFR_Start_the_TGV
+		prerequisite ={ focus =  FFR_Pompediou_Into_the_Spotlight }
+		icon = GFX_Generic_Train_Infrastructure
+		x = -11
+		y = 11
+		cost = 2
+
+		completion_reward = {
+		set_temp_variable = { gdp_growth_temp = 0.5 }
+		econ_gdp_growth_change = yes
+
+		}
+			}
+	focus = {
+		id = FFR_Booming_Technocracy
+		prerequisite ={ focus =  FFR_Start_the_TGV }
+		icon = GFX_CHI_We_Have_The_Technology
+		x = -13
+		y = 12
+		cost = 2
+
+		completion_reward = {
+		set_temp_variable = { gdp_growth_temp = 2.4 }
+		econ_gdp_growth_change = yes
+		}
+			}
+		focus = {
+		id = FFR_Technocratic_Economy
+		prerequisite ={ focus =  FFR_Booming_Technocracy }
+		icon = GFX_CHI_Technical_Subjects
+		x = -15
+		y = 13
+		cost = 2
+
+		completion_reward = {
+		set_temp_variable = { gdp_growth_temp = 1.2}
+		econ_gdp_growth_change = yes
+		}
+			}
+	focus = {
+		id = FFR_Hire_more_Technoworkers
+		prerequisite ={ focus =  FFR_Booming_Technocracy }
+		icon = GFX_USA_workers_for_business
+		x = -12
+		y = 13
+		cost = 2
+
+		completion_reward = {
+		set_temp_variable = { gdp_growth_temp = 0.4}
+		econ_gdp_growth_change = yes
+	TNO_improve_poverty_high = yes
+		}
+			}
+	focus = {
+		id = FFR_A_Technocratic_France
+		prerequisite ={ focus =  FFR_Technocratic_Economy }
+		prerequisite ={ focus =  FFR_Hire_more_Technoworkers }
+		icon = GFX_BRG_focus_technical_companies
+		x = -13
+		y = 14
+		cost = 2
+
+		completion_reward = {
+		set_temp_variable = { gdp_growth_temp = 1.9}
+		econ_gdp_growth_change = yes
+	TNO_improve_poverty_high = yes
+	TNO_improve_admin_efficiency_high = yes
+	set_cosmetic_tag = FFR_Techno
+		}
+			}
+	focus = {
+		id = FFR_Scientific_Enhancements
+		prerequisite ={ focus =  FFR_Start_the_TGV }
+		icon = GFX_CHI_Science
+		x = -9
+		y = 12
+		cost = 2
+
+		completion_reward = {
+		add_research_slot = 1
+		}
+			}
+	focus = {
+		id = FFR_New_Weaponry
+		prerequisite ={ focus =  FFR_Start_the_TGV }
+		icon = GFX_BRG_focus_its_not_rocket_science
+		x = -9
+		y = 13
+		cost = 2
+
+		completion_reward = {
+		add_tech_bonus = {
+				name = New_Weaponry
+				bonus = 0.5
+				uses = 4
+				category = infantry_weapons
+				category = armor
+				category = artillery
+			}
+		}
+			}
+	focus = {
+		id = FFR_Technocratic_Army
+		prerequisite ={ focus =  FFR_Start_the_TGV }
+		icon = GFX_KOM_vision_for_the_army_ultravisionary
+		x = -9
+		y = 14
+		cost = 2
+
+		completion_reward = {
+		add_ideas = 
+		FFR_Technocratic_Army
+		}
+			}
 		focus = {
 		id = FFR_French_Sahara?
         prerequisite ={ focus =  FFR_eternal_restoration }
 		
 		icon = GFX_focus_fra_le_deluge
-		x = 12
+		x = 11
 		y = 11
 		cost = 2
 
@@ -654,10 +770,11 @@ focus = {
 		cost = 10
 
 		completion_reward = {
+		news_event = { id =  FFR_TNOPR.2}
 		}
 			}
   focus = {
-		id = FFR_Marching_West
+		id = FFR_Marching_South
         prerequisite ={ focus =  FFR_France_on_the_World_Stage }
 		
 		icon = GFX_focus_fra_le_deluge
@@ -670,7 +787,7 @@ focus = {
 			}
   focus = {
 		id = FFR_Ultamatum_to_Iberia
-        prerequisite ={ focus =  FFR_Marching_West}
+        prerequisite ={ focus =  FFR_Marching_South}
 		
 		icon = GFX_focus_fra_le_deluge
 		x = 22
@@ -678,7 +795,12 @@ focus = {
 		cost = 10
 
 		completion_reward = {
+		FFR = {
+		transfer_state = 705
+		transfer_state = 1548
+		transfer_state = 1549
 		}
+			}
 			}
   focus = {
 		id = FFR_Claim_the_Italian_Territories
@@ -695,7 +817,206 @@ focus = {
 		add_state_claim = 458
 		add_state_claim = 665
 		add_state_claim = 1142
+	declare_war_on = {
+    	target = ITA
+    	type = annex_everything
+	}
 		}
 			}							
-			
+	  focus = {
+		id = FFR_Claim_Western_France
+		
+		icon = GFX_focus_SWI_fortify_border_with_france
+		x = 22
+		y = 4
+		cost = 3
+    available = {
+	NOT = {
+	country_exists = FRS
+	}
+	}
+		completion_reward = {
+		add_state_core = 1812
+		add_state_core = 28
+		add_state_core = 32
+		add_state_core = 20
+		add_state_core = 1635
+		add_state_core = 17
+		add_state_core = 27
+		add_state_core = 1625
+	}
+		}
+	focus = {
+		id = FFR_Revenge_on_Burgundy
+		prerequisite ={ focus =  FFR_Claim_Western_France}
+		
+		icon = GFX_focus_focus_fra_maquis
+		x = 22
+		y = 5
+		cost = 2
+
+		completion_reward = {
+    	declare_war_on = {
+    	target = BRG
+    	type = annex_everything
+	}
+	declare_war_on = {
+    	target = RPY
+    	type = annex_everything
+	}
+	declare_war_on = {
+    	target = PIC
+    	type = annex_everything
+	}
+    declare_war_on = {
+    	target = BEL
+    	type = annex_everything
+	}
+	}
+		}
+	focus = {
+		id = FFR_A_Formal_Invitaion
+		prerequisite ={ focus =  FFR_Revenge_on_Burgundy}
+	    available = {
+        NOT = {
+        country_exists = BRG
+        country_exists = PIC
+        country_exists = RPY
+        country_exists = BEL
+}
+}		
+		icon = GFX_focus_fra_le_deluge
+		x = 22
+		y = 6
+		cost = 2
+
+		completion_reward = {
+    USA = {
+	add_to_faction = FFR
+	}
+	FFR = {
+	add_ideas = OFN_Independent_Member
+	transfer_state = 310
+	}
+	news_event = { id =  FFRnews.19}
+	}
+		}
+	focus = {
+		id = FFR_The_spectre_haunts_us
+	available = {
+	NOT = {
+	country_exists = FRS
+	}
+	has_government = socialist
+	}
+		icon = GFX_OST_Unite_the_Left
+		x = 23
+		y = 10
+		cost = 2
+
+		completion_reward = {
+		set_temp_variable = { gdp_growth_temp = 2.4 }
+		econ_gdp_growth_change = yes
+		}
+			}
+		focus = {
+		id = FFR_Worker_freedoms
+	available = {
+	NOT = {
+	country_exists = FRS
+	}
+	has_government = socialist
+	}
+	prerequisite ={ focus =  FFR_The_spectre_haunts_us}
+		icon = GFX_TNO_generic_left_unity
+		x = 23
+		y = 11
+		cost = 2
+
+		completion_reward = {
+		set_temp_variable = { gdp_growth_temp = 2.4 }
+		econ_gdp_growth_change = yes
+		}
+			}
+	focus = {
+		id = FFR_Farthest_We_Can_Go
+	available = {
+	NOT = {
+	country_exists = FRS
+	}
+	has_government = socialist
+	}
+	prerequisite ={ focus =  FFR_Worker_freedoms}
+		icon = GFX_TNO_generic_left_unity_warfare
+		x = 21
+		y = 12
+		cost = 2
+
+		completion_reward = {
+    set_politics = {
+	ruling_party = communist
+	}
+		}
+			}
+	focus = {
+		id = FFR_A_Purge_is_needed
+	available = {
+	NOT = {
+	country_exists = FRS
+	}
+	has_government = socialist
+	}
+	prerequisite ={ focus =  FFR_Farthest_We_Can_Go}
+		icon = GFX_TNO_generic_socialist_purge
+		x = 21
+		y = 13
+		cost = 2
+
+		completion_reward = {
+    set_politics = {
+	ruling_party = communist
+	}
+		}
+			}
+	focus = {
+		id = FFR_Staying_true_To_Syndicalism
+	available = {
+	NOT = {
+	country_exists = FRS
+	}
+	has_government = socialist
+	}
+	prerequisite ={ focus =  FFR_Worker_freedoms}
+		icon = GFX_IND_The_Home_of_Revolution
+		x = 24
+		y = 12
+		cost = 2
+
+		completion_reward = {
+    set_politics = {
+	ruling_party = communist
+	}
+		}
+			}
+	focus = {
+		id = FFR_Liberty_Egality_Solidarity
+	available = {
+	NOT = {
+	country_exists = FRS
+	}
+	has_government = socialist
+	}
+	prerequisite ={ focus =  FFR_Worker_freedoms}
+		icon = GFX_BRY_A_Revolutionary_Indoctrination
+		x = 24
+		y = 13
+		cost = 2
+
+		completion_reward = {
+    set_politics = {
+	ruling_party = communist
+	}
+		}
+			}
+			}
 			

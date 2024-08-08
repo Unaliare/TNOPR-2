@@ -1,0 +1,94 @@
+﻿focus_tree = {
+	id = Reichstag_Tree
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GER
+		}
+	}
+	
+	default = no
+	focus = {
+		id = GER_Reichstag_in_Power
+		icon = GFX_POL_The_Partisan_Problem
+		x = 0
+		y = 0
+       cost = 1
+		completion_reward = {
+		add_political_power = 10
+		add_manpower = 1000
+		custom_effect_tooltip = GER_Reichstag_tt
+
+			}
+		}
+	
+	focus = {
+		id = GER_Dealing_with_Students
+		icon = GFX_POL_The_Partisan_Problem
+		prerequisite = { focus = GER_Reichstag_in_Power}
+		x = 0
+		y = 1
+       cost = 2
+		completion_reward = {
+		add_political_power = 10
+		add_manpower = 1000
+
+			}
+		}
+	focus = {
+		id = GER_Remer_Way
+		icon = GFX_POL_The_Partisan_Problem
+		prerequisite = { focus = GER_Dealing_with_Students}
+		x = 3
+		y = 2
+       cost = 2
+		completion_reward = {
+		add_political_power = 10
+		add_manpower = 1000
+
+			}
+		}
+	focus = {
+		id = GER_Schmidt_Way
+		icon = GFX_POL_The_Partisan_Problem
+		prerequisite = { focus = GER_Dealing_with_Students}
+		x = 1
+		y = 2
+       cost = 2
+		completion_reward = {
+		add_political_power = 10
+		add_manpower = 1000
+
+			}
+		}
+	focus = {
+		id = GER_Rommel_Way
+		icon = GFX_POL_The_Partisan_Problem
+		prerequisite = { focus = GER_Dealing_with_Students}
+		x = -2
+		y = 2
+       cost = 2
+		completion_reward = {
+		add_political_power = 10
+		add_manpower = 1000
+
+			}
+		}
+	focus = {
+		id = GER_Now_to_deal_with_the_Four
+		icon = GFX_POL_The_Partisan_Problem
+		prerequisite = { focus = GER_Dealing_with_Students}
+		x = 0
+		y = 3
+       cost = 2
+		completion_reward = {
+		add_political_power = 10
+		add_manpower = 1000
+
+			}
+		}
+	
+	
+	}

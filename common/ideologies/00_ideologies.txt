@@ -511,7 +511,7 @@ ideologies = {
 			communist_revolutionary_baathism_subtype = { can_be_randomly_selected = no }
 			communist_stratocratic_communism_subtype = { can_be_randomly_selected = no }
 			communist_trotskyism_subtype = { can_be_randomly_selected = no }
-
+            communist_Federovshchina_subtype = {can_be_randomly_selected = yes } # USSR FUNNI
 			communist_harmonism_subtype = { can_be_randomly_selected = no } # The funny
 		}
 		dynamic_faction_names = {}

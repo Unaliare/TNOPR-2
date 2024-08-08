@@ -917,6 +917,8 @@ shared_focus = {
 	}
 }
 
+
+
 ### NEW UCW TREE ###
 
 shared_focus = { # Vindicate The Long March
@@ -2017,9 +2019,87 @@ shared_focus = { # Spring turns to summer
 		set_temp_variable = { temp_all_des = -9 }
 		UKR_bb_R_change_desolation_all = yes
 
-		# Epilogue Event
-		country_event = UKR_u_ssr_postcw.11
 
 		custom_effect_tooltip = UKS_spring_turns_to_summer_tt
 	}
+}
+shared_focus = {
+	id = UKS_Liberation_of_Moldova
+	icon = GFX_UKR_1918_once_more
+	cost = 1
+	prerequisite = {
+		focus = UKS_spring_turns_to_summer
+	}
+	relative_position_id = UKS_spring_turns_to_summer
+	x = 0
+	y = 1
+
+	completion_reward = {
+    add_state_core = 198
+	add_state_core = 1965
+	add_state_core = 1966
+	add_state_core = 1282
+	add_state_core = 192
+	add_state_core = 80
+	add_state_core = 1286
+	add_state_core = 78
+	add_state_core = 1285
+	
+		UKS = {
+			add_war_support = 0.1
+
+	declare_war_on = {
+		target = ROM
+		type = annex_everything
+    }
+declare_war_on = {
+		target = TNS
+		type = annex_everything
+    }
+		}
+	}
+}
+
+shared_focus = {
+	id = UKS_Ukraine_is_USSR
+	icon = GFX_UKR_1918_once_more
+	cost = 1
+	prerequisite = {
+		focus = UKS_Liberation_of_Caucasia
+	}
+	relative_position_id = UKS_Liberation_of_Caucasia
+	x = 0
+	y = 1
+
+	completion_reward = {
+	set_cosmetic_tag = UKR_USSR
+    }
+		}
+
+shared_focus = {
+	id = UKS_Liberation_of_Caucasia
+	icon = GFX_UKR_1918_once_more
+	cost = 4
+	prerequisite = {
+		focus = UKS_Liberation_of_Moldova
+	}
+	relative_position_id = UKS_Liberation_of_Moldova
+	x = 0
+	y = 1
+   
+	completion_reward = {
+    every_state = {
+	limit = {
+	is_core_of = CAU
+	}
+	add_core_of = UKS
+		UKS = {
+			add_war_support = 0.1
+		declare_war_on = {
+		target = CAU
+		type = annex_everything
+    }
+		}
+	}
+}
 }

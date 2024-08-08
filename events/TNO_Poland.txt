@@ -18,6 +18,8 @@ country_event = {
 
 	option = {
 		name = pol.9.a
+	GER = {
+	country_event = { id = speer_tnopr.1 days = 3}
 	}
 }
 

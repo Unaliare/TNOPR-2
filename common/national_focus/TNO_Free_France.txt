@@ -973,9 +973,6 @@ focus = {
 		cost = 2
 
 		completion_reward = {
-    set_politics = {
-	ruling_party = communist
-	}
 		}
 			}
 	focus = {
@@ -993,9 +990,6 @@ focus = {
 		cost = 2
 
 		completion_reward = {
-    set_politics = {
-	ruling_party = communist
-	}
 		}
 			}
 	focus = {
@@ -1013,8 +1007,6 @@ focus = {
 		cost = 2
 
 		completion_reward = {
-    set_politics = {
-	ruling_party = communist
 	}
 		}
 			}

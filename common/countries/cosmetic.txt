@@ -1134,6 +1134,11 @@ UKR_ssr = {
 	color_ui = rgb { 163 66 76 }
 }
 
+UKR_USSR = {
+	color = rgb { 163 66 76 }
+	color_ui = rgb { 163 66 76 }
+}
+
 CAU_ssr = {
 	color = rgb { 163 66 76 }
 	color_ui = rgb { 163 66 76 }

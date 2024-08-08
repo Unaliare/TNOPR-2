@@ -44,11 +44,62 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 100
 			add_manpower = 1000
-			world_event = {WORLD.20000}
 		set_politics = {
 				ruling_party = despotism
 		}
-		world_event = { WORLD.20000}
+		JAP = {
+		news_event = { id = WORLD.20000}
+			}
+		}
+		}
+	
+	    focus = {
+		id = JAP_The_New_Constitution
+		icon = GFX_JAP_showa_constitution
+		x = 0
+		y = 2
+		cost = 5
+    prerequisite = { focus = JAP_Path_to_Glory }
+		completion_reward = {
+			add_political_power = 100
+			add_manpower = 1000
+			
+		set_politics = {
+				ruling_party = despotism
+		}
+			}
+		}
+	focus = {
+		id = JAP_Military_State
+		icon = GFX_JAP_showa_constitution
+		x = 0
+		y = 3
+		cost = 5
+    prerequisite = { focus = JAP_The_New_Constitution}
+		completion_reward = {
+			add_political_power = 100
+			add_manpower = 1000
+			
+		set_politics = {
+				ruling_party = despotism
+		}
+			}
+		}
+	
+		focus = {
+		id = JAP_Shogunate
+		icon = GFX_JAP_showa_constitution
+		x = 0
+		y = 4
+		cost = 5
+    prerequisite = { focus = JAP_Military_State }
+		completion_reward = {
+			add_political_power = 100
+			add_manpower = 1000
+			
+		set_politics = {
+				ruling_party = despotism
+		}
 			}
 		}
 		
@@ -158,6 +209,9 @@ focus_tree = {
 			add_manpower = 1000
 			set_cosmetic_tag = JAP_Kishi
 			load_focus_tree = JAP_Kishi_Savinkov_larp
+		JAP = {
+		news_event = { id = WORLD.20001}
+			}
 			}
 		}
 		
@@ -326,6 +380,67 @@ focus = {
 			add_manpower = 1000
 			}
 		}
+	
+	focus = {
+		id = JAP_Clamp_IJN_funds
+
+		icon = GFX_generic_anglo_soldier
+		x = 8
+		y = 4
+		cost = 2
+		mutually_exclusive = {focus =  JAP_Military_Rhetoric }
+        prerequisite = {
+		focus =  JAP_The_Economic_Debate
+		}
+		available = {
+
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_manpower = 1000
+			}
+		}
+		
+		focus = {
+		id = JAP_Raise_IJA_funds
+
+		icon = GFX_generic_anglo_soldier
+		x = 8
+		y = 5
+		cost = 2
+		mutually_exclusive = {focus =  JAP_Military_Rhetoric }
+        prerequisite = {
+		focus =  JAP_The_Economic_Debate
+		}
+		available = {
+
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_manpower = 1000
+			}
+		}
+		
+	focus = {
+		id = JAP_War_economy
+
+		icon = GFX_generic_anglo_soldier
+		x = 8
+		y = 6
+		cost = 2
+		mutually_exclusive = {focus =  JAP_Military_Rhetoric }
+        prerequisite = {
+		focus =  JAP_The_Economic_Debate
+		}
+		available = {
+
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_manpower = 1000
+			}
+		}
+	
 	focus = {
 		id = JAP_Civil_Rhetoric
 
@@ -344,7 +459,252 @@ focus = {
 			add_political_power = 100
 			add_manpower = 1000
 			}
-		}		
+		}
+	focus = {
+		id = JAP_Solving_unemployment
+
+		icon = GFX_generic_anglo_soldier
+		x = 11
+		y = 4
+		cost = 2
+        prerequisite = {
+		focus =  JAP_Civil_Rhetoric
+		}
+		available = {
+
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_manpower = 1000
+			}
+		}
+	focus = {
+		id = JAP_Farming_Subsidies
+
+		icon = GFX_generic_anglo_soldier
+		x = 11
+		y = 5
+		cost = 2
+        prerequisite = {
+		focus =  JAP_Solving_unemployment
+		}
+		available = {
+
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_manpower = 1000
+			}
+		}
+    focus = {
+		id = JAP_Sweeping_Corporate_and_Military_Control
+
+		icon = GFX_generic_anglo_soldier
+		x = 11
+		y = 6
+		cost = 2
+        prerequisite = {
+		focus =  JAP_Farming_Subsidies
+		}
+		available = {
+
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_manpower = 1000
+			}
+		}
+    focus = {
+		id = JAP_The_Sun_Rises_Once_More
+
+		icon = GFX_generic_anglo_soldier
+		x = 10
+		y = 7
+		cost = 2
+        prerequisite = {
+		focus =  JAP_Sweeping_Corporate_and_Military_Control
+		focus = JAP_War_economy
+		}
+		available = {
+
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_manpower = 1000
+			}
+		}
+	
+    focus = {
+		id = JAP_Back_on_The_World_Stage
+
+		icon = GFX_generic_anglo_soldier
+		x = 15
+		y = 0
+		cost = 2
+        prerequisite = {
+		}
+		available = {
+
+		}
+		completion_reward = {
+    create_faction = Japanese_Co-Prosperity_Sphere
+			}
+		}
+		
+    focus = {
+		id = JAP_Ceylon_is_Japanese
+
+		icon = GFX_generic_anglo_soldier
+		x = 15
+		y = 1
+		cost = 2
+        prerequisite = {
+		focus =  JAP_Back_on_The_World_Stage
+		}
+		available = {
+
+		}
+		completion_reward = {
+    declare_war_on = {
+	target = CYL
+	type = annex_everything
+	}
+			}
+		}
+    focus = {
+		id = JAP_End_The_Flames_of_Communism_in_Indochina
+
+		icon = GFX_generic_anglo_soldier
+		x = 15
+		y = 2
+		cost = 2
+        prerequisite = {
+		focus =  JAP_Ceylon_is_Japanese
+		}
+		available = {
+
+		}
+		completion_reward = {
+    declare_war_on = {
+	target = VIC
+	type = annex_everything
+	}
+			}
+		}
+    focus = {
+		id = JAP_Divide_Indochina
+
+		icon = GFX_generic_anglo_soldier
+		x = 15
+		y = 4
+		cost = 2
+		available = {
+		NOT = {
+		country_exists = VIC
+		}
+		}
+        prerequisite = {
+		focus =  JAP_End_The_Flames_of_Communism_in_Indochina
+		}
+		available = {
+
+		}
+		completion_reward = {
+    CAM = {
+	transfer_state = 741
+	}
+	LAO = {
+	transfer_state = 670
+	transfer_state = 877
+	}
+	add_to_faction = CAM
+	add_to_faction = LAO
+	release_nation = VIN
+	add_to_faction = VIN
+	}
+			}
+    focus = {
+		id = JAP_Plans_for_Burma
+
+		icon = GFX_generic_anglo_soldier
+		x = 15
+		y = 5
+		cost = 2
+		available = {
+		NOT = {
+		country_exists = VIC
+		}
+		}
+        prerequisite = {
+		focus =  JAP_End_The_Flames_of_Communism_in_Indochina
+		}
+		available = {
+
+		}
+		completion_reward = {
+    CAM = {
+	transfer_state = 741
+	}
+	LAO = {
+	transfer_state = 670
+	transfer_state = 877
+	}
+	add_to_faction = CAM
+	add_to_faction = LAO
+	release_nation = VIN
+	add_to_faction = VIN
+	}
+			}	
+    focus = {
+		id = JAP_Plans_For_India
+
+		icon = GFX_generic_anglo_soldier
+		x = 15
+		y = 6
+		cost = 2
+		available = {
+		NOT = {
+		country_exists = VIC
+		}
+		}
+        prerequisite = {
+		focus =  JAP_plans
+		}
+		available = {
+
+		}
+		completion_reward = {
+    CAM = {
+	transfer_state = 741
+	}
+	LAO = {
+	transfer_state = 670
+	transfer_state = 877
+	}
+	add_to_faction = CAM
+	add_to_faction = LAO
+	release_nation = VIN
+	add_to_faction = VIN
+	}
+			}		
+
+	focus = {
+		id = JAP_Tasmania_Conference
+
+		icon = GFX_generic_anglo_soldier
+		x = 20
+		y = 0
+		cost = 5
+
+		available = {
+       AST = {
+	   at_war_with = NRB
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_manpower = 1000
+			}
+		}			
 	
 	
 }

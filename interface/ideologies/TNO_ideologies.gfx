@@ -4,6 +4,10 @@ spriteTypes = {
 		name = "GFX_ideology_national_socialism_ariocriollismo_subtype"
 		texturefile = "gfx/interface/ideologies/national_socialism_ariocriollismo_subtype.dds"
 	}
+		spriteType = {
+		name = "GFX_ideology_communist_Federovshchina_subtype"
+		texturefile = "gfx/interface/ideologies/communist_liberal_socialism_subtype.dds"
+	}
 	spriteType = {
 		name = "GFX_ideology_national_socialism_rosenbergite_tendency_subtype"
 		texturefile = "gfx/interface/ideologies/national_socialism_rosenbergite_tendency_subtype.dds"

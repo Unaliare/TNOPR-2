@@ -297,17 +297,46 @@ focus_tree = {
 		}
 		prerequisite = { focus = GER_Reclaiming_our_Empire }
 		completion_reward = {
-		custom_effect_tooltip = GER_reclaiming_europe_tooltip
 			add_political_power = 100
 			add_stability = 0.01
 			POL = {
-			country_event = {event pol.9}
-	
+			country_event = { id = event pol.9}
 			}
 		}
+		}
+		
+		focus = {
+		id = GER_March_to_Prag
+		prerequisite = { focus = GER_Appeal_To_Poland?}
+		icon = GFX_DRL_When_The_World_Stopped_Making_Sense
+		x = 0
+		y = 9
+		cost = 2
+		completion_reward = {
+    declare_war_on = {
+	target = CZE 
+	type = annex_everything
+	}
 	
+	}
+		}
+	focus = {
+		id = GER_Nordic_Adventures
+		prerequisite = { focus = GER_March_to_Prag}
+		icon = GFX_DRL_When_The_World_Stopped_Making_Sense
+		x = 0
+		y = 10
+		cost = 2
+		completion_reward = {
+    declare_war_on = {
+	target = CZE 
+	type = annex_everything
+	}
 	
-}
+			}
+		}	
+		
+		}
 
 
 

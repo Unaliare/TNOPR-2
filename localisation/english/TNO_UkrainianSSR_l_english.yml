@@ -1,8 +1,10 @@
 ﻿l_english:
  ### Country Names ###
- UKS: "Ukrainian Socialist Soviet Republic"
- UKS_DEF: "the Ukrainian Socialist Soviet Republic"
+ UKS: "Ukrainian Congress of Soviets"
+ UKS_DEF: "the Ukrainian Congress of Soviets"
  UKS_ADJ: "Ukrainian"
+ UKR_USSR: "Soviet Union"
+ UKR_USSR_DEF: "The Union of Soviet Socialist Republics"
 
  ### Party Names ###
  
@@ -98,13 +100,13 @@
  
  ### Leaders ###
  
- UKS_Oleksander_Shumskyi: "Oleksandr Shumskyi"
+ UKS_Oleksander_Shumskyi: "Alexander Shumskyi"
  UKS_Anatoliy_Pisotskyi: "Andriy Richytskyi"
  UKS_Osyp_Krilyk: "Osyp "Vasylkiv" Krilyk"
  UKS_Roman_Rosdolsky: "Roman Rozdolskyi"
  UKS_Vsevolod_Holubnychyi: "Vsevolod Holubnychyi"
  UKS_Yury_Hamretskyi: "Yury Hamretskyi"
- UKS_Oleksiy_Fedorov: "Oleksiy Fedorov"
+ UKS_Oleksiy_Fedorov: "Alexey Fedorov"
  UKS_Borys_Shulzhenko: "Borys Shulzhenko"
  UKS_Mykola_Zubatenko: "Mykola Zubatenko"
  UKS_Vitaliy_Nikitchenko: "Vitaliy Nikitchenko"
@@ -132,13 +134,12 @@
  UKS_German_Remnants: "German Remnants"
 
  POLITICS_SYDIR_KOVPAK_DESC: ""
- POLITICS_OLEKSIY_FEDOROV_DESC: "wholesome communism 100 sablin confirmed?\n\n§R(spoilers: no)§!"
  POLITICS_OLEKSANDR_SHUMSKYI_DESC: "To the likes of a man such as Oleksandr Yakovych Shumskyi, life is always an uphill battle. In every corner, those who opposed him would always stand in his way, and facing them was a life long uphill battle of ideals and ideologies, and the hill was not an easy one to climb. Unlike many others in his time, he was a man of action, not just words, and was sick of politicians and bureaucrats babbling about their ideal world, Shumskyi was the only one bold enough to turn his words into action.\n\nFor a Ukrainian boy born into a minor noble home, a dull future seemed upsettingly inevitable. He studied in the city of Moscow, and instead of finding life dull, he found the key to his future through revolutionary politics. Perhaps that is what pressured Shumskyi into pursuing another life, or perhaps it was destiny for a man like Shumskyi, and it would certainly seem to be something of destiny for any soldier or orator of such skill. Fortunately for the people of Ukraine, Shumskyi is both.\n\nHaving fought for the Revolution against the Whites, and then against the Germans since they first stepped foot into Ukrainian soil, Oleksandr Shumskyi has dedicated every moment of his life not only for the Ukrainian revolution, but for the Ukrainian people. Since his first clashes with Bukharin for Ukrainianization projects to be carried through, not to mention his constant pushes for a Ukrainian Home Army which have only been a blessing since, many regard Shumskyi as the Lion which has saved not only Ukraine from total Russian or German domination, but the savior of Ukrainian culture.\n\nOf course, this position can only last for so long, before the Germans come back to tread on Ukrainian soil once more, and they return to lock the chain around the collective Ukrainian neck. If anyone can put a stop to such a thing happening again, however, it is Oleksandr Shumskyi."
  UKS_Anatoliy_Pisotskyi_hog_desc: "§YUnflinching Radical\nFirst Secretary of the Communist Party of Ukraine (Bolsheviks)\nLeft Communism§!\n--------------\n§LIf you told a younger Anatolly Pisotskyi - better known by his pseudonym Andriy Richytskyi - that he would serve as the First Secretary of the Communist Party of Ukraine, he would dismiss it as a passing dream, unsuited for a man like him. After all, he was an intellectual, comfortable in his Ukapist niche. History would have other things in store for him.\n\nAs the UKP ideologue and a critic of the Ukrainian Bolsheviks, Richytskyi would bounce around minor U-SSR positions for several years before the merger with the KPbU in 1925. Over time, he would grow close to party leader Mykola Skrypnyk and his bolshevik ideals. Now the secretary in a new, free Ukraine, he advocates nationwide common ownership through the organization of the population into a single network of communes, though time will tell if he can succeed.§!"
  UKS_Roman_Rosdolsky_for_desc: "§YIdeological Crusader\nPeople's Commissar of Foreign Affairs\nBolshevik-Leninism§!\n--------------\n§LOriginally from Austrian Galicia, Roman Osypovych Rozdolskyi gives a different perspective than many of his East Ukrainian comrades. Born in Lviv just before the turn of the century, his commitment to Marxism is almost as old as his family's struggle for Ukrainian independence. Drafted into the Austro-Hungarian Imperial Army, Rozdolskyi was forced into a war between capitalists. When his subjugator fell, he would soon find his way into the revolutionary Red Army to fight for a more noble cause.\n\nRozdolskyi's careful scholarship of Marx's work and study across Europe has won him significant connections and acclaim from the communist movement internationally - An attribute recognized by the party, which granted him a substantial say over the new Soviet Republic's foreign affairs. Rozdolskyi must be able to leverage and pull these connections if the emancipatory promise of the Ukrainian revolution is to survive immediate German reprisal.§!"
  UKS_Vsevolod_Holubnychyi_eco_desc: "§YCautious Councilist\nChairman of the UkSRR Derzhplan\nCommunism§!\n--------------\n§LVsevolod Holubnychyi was once merely one of millions of forced laborers in Germany, stolen from his home in Kharkiv in 1943 at the young age of 15. To any observer, he seemed doomed to follow the fate of so many souls consumed by the Reich - until he encountered an underground KPbU cell among Ukrainian Ostarbeiter,  where he would become acquainted with Marxism.\n\nQuickly making a name for himself as a rising star in the intellectual wing of the communist partisan movement upon his eventual return to the Reichskommissariat, specializing in economic readings of Marx's theories, he now stands as the head of the Ukrainian socialist republic's economic apparatus, hoping to use his position to push for the decentralized council-communist system he has always advocated.§!"
  UKS_Mykola_Zubatenko_sec_desc: "§YSteadfast Defender\nPeople's Commissar of Internal Affairs\nNational Communism§!\n--------------\n§LMykola Ivanovych Zubatenko fits well into the idea of a model Chekist, steadfast in conviction, efficient in action, and relentless in pursuit of the enemy. Born in 1917 to a Ukrainian family in Donetsk, Zubatenko would later find himself drafted into the Red Army in 1939 where he chose to join the NKVD. During his studies at the NKVD commissary in Moscow, he felt alienated by his Russian surroundings, wishing soon to return to his homeland of Ukraine.\n\nAs Moscow fell, Zubatenko fought as part of a motorized rifle unit and later slipped away to Ukraine, where he would take part in the local communist partisan movement, gaining influence as the Nazi occupation limped on. He had firmly opposed Tymofiy Strokach's catastrophic decision to launch the general uprising in 1956, which pushed Zubatenko towards his now close friend and like-minded associate Shumskyi. Zubatenko now commands the security apparatus of the Communist underground, his one goal - To ensure both that there may be no freedom for the enemies of the revolution and that there must be freedom for its friends, a goal he will attempt to dedicate the rest of his career and life to.§!"
-
+ POLITICS_FEDOROV_DESC: "Comrade, Ukrainian, Commissar, §RHero of the Soviet Union§!, Federov has been called many things... But the 3rd Premier of the Soviet Union? Goodness, no! Atleast that's what the Comrades out west think. Here, he is regarded as the §B2nd Lenin§!. Fighting since the fall of Kiev in 1943, Federov has made quite a name in the Dnieper and most of Ukraine. However, if he can still live up to some hefty titles it is still to be seen...."
  hog_unflinching_radical: "Unflinching Radical"
  UKS_SPG_reconnected: "Reestablished Ties"
 

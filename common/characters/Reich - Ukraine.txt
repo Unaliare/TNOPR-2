@@ -1286,12 +1286,13 @@ characters = {
 				large = "gfx/leaders/UKS/Portrait_UKS_Oleksander_Shumskyi.dds"
 			}
 		}
-		country_leader = {
-			desc = "POLITICS_OLEKSANDR_SHUMSKYI_DESC"
-			ideology = communist_national_communism_subtype
-			expire = "1983.1.1.1"
-			traits = { the_old_fighter }
-			id = -1
+	corps_commander = {
+			traits = { guerrilla_fighter }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
 		}
 	}
 
@@ -1525,6 +1526,12 @@ characters = {
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
+		}
+		country_leader = {
+			desc = "POLITICS_FEDOROV_DESC"
+			ideology = communist_Federovshchina_subtype
+			expire = "1983.1.1.1"
+			id = -1
 		}
 	}
 

@@ -83,6 +83,8 @@
  GER:0 "Großgermanisches Reich"
  GER_DEF:0 "das Großgermanische Reich der Deutschen Nation"
  GER_ADJ:0 "German"
+ GER_communist:0 "Deutsche Sozialistische Volksrepublik"
+ GER_communist_DEF:0 "The German Socialist People's Republic"
  
  ### PARTIES ###
  GER_communist_party: "RZ"

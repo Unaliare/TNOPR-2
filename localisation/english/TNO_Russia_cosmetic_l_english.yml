@@ -173,8 +173,8 @@
  WRS_regional_unifier_despotism_ADJ: "West Russian"
  
  #West Siberia
- OMS_regional_unifier_ultranationalism: "West Siberian Provisional Authority"
- OMS_regional_unifier_ultranationalism_DEF: "the West Siberian Provisional Authority"
+ OMS_regional_unifier_ultranationalism: "West Siberian Soviet Black League"
+ OMS_regional_unifier_ultranationalism_DEF: "the West Siberian Soviet Black League"
  OMS_regional_unifier_ultranationalism_ADJ: "West Siberian"
  
  TYM_regional_unifier_communist: "West Siberian People's Republic"
@@ -502,11 +502,11 @@
  ###RUSSIANS
 
  #Omsk
- OMS_POTEMKIN_RUS: "Russian National Reclamation Government"
- OMS_POTEMKIN_RUS_DEF: "the Russian National Reclamation Government"
+ OMS_POTEMKIN_RUS: "Soviet Black League"
+ OMS_POTEMKIN_RUS_DEF: "the Soviet Black League"
  OMS_POTEMKIN_RUS_ADJ: "Russian"
- OMS_RUS_ultranationalism: "Russian National Reclamation Government"
- OMS_RUS_ultranationalism_DEF: "the Russian National Reclamation Government"
+ OMS_RUS_ultranationalism: "Soviet Black League"
+ OMS_RUS_ultranationalism_DEF: "the Soviet Black League"
  OMS_RUS_ultranationalism_ADJ: "Russian"
 
  #Tyumen

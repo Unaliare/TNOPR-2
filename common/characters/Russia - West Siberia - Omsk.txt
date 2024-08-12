@@ -90,18 +90,6 @@ characters = {
 		}
 	}
 
-	OMS_Collapsed_Authority = {
-		name = OMS_Collapsed_Authority
-		portraits = { civilian = { large = "gfx/leaders/OMS/Portrait_Omsk_Power_Vacuum.dds" } }
-		country_leader = {
-			desc = "POLITICS_OMSK_COLLAPSED_AUTHORITY_DESC"
-			expire = "1999.1.1"
-			ideology = ultranationalism_ultramilitarism_subtype
-			traits = { utterly_abandoned }
-			id = -1
-		}
-	}
-
 	OMS_Collapsed_Authority_despot = {
 		name = OMS_Collapsed_Authority
 		portraits = { civilian = { large = "gfx/leaders/OMS/Portrait_Omsk_Power_Vacuum.dds" } }

@@ -2064,6 +2064,11 @@ shared_focus = {
 	id = UKS_Ukraine_is_USSR
 	icon = GFX_UKR_1918_once_more
 	cost = 1
+	available = {
+	NOT = {
+	country_exists = CAU
+	}
+	}
 	prerequisite = {
 		focus = UKS_Liberation_of_Caucasia
 	}
@@ -2073,6 +2078,7 @@ shared_focus = {
 
 	completion_reward = {
 	set_cosmetic_tag = UKR_USSR
+	load_focus_tree = UKS_USSR
     }
 		}
 
@@ -2093,6 +2099,7 @@ shared_focus = {
 	is_core_of = CAU
 	}
 	add_core_of = UKS
+	}
 		UKS = {
 			add_war_support = 0.1
 		declare_war_on = {
@@ -2101,5 +2108,4 @@ shared_focus = {
     }
 		}
 	}
-}
 }

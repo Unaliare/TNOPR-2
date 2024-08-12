@@ -1,7 +1,7 @@
 
 
 focus_tree = {
-	id = bulgarian_focus
+	id = UKS_USSR
 
 	country = {
 		factor = 0
@@ -17,13 +17,14 @@ focus_tree = {
 	continuous_focus_position = { x = 50 y = 1500 }
 
 
-	focus = {
-		id = BUL_Tsardom_of_Chaos
 
-		icon = GFX_goal_generic_production2
+	focus = {
+		id = UKS_Rise_of_The_Reds
+
+		icon = GFX_A_Productive_Union
 		x = 0
 		y = 0
-		cost = 5
+		cost = 2
 
 		available = {
 
@@ -32,6 +33,188 @@ focus_tree = {
 			add_political_power = -10
 			add_stability = -0.1
 			}
-		}	
+		}
+	focus = {
+		id = UKS_The_Fascist_lurks
+
+		icon = GFX_generic_smash_nazi_symbols
+		x = 0
+		y = 1
+		cost = 1
+	prerequisite = {
+		focus = UKS_Rise_of_The_Reds
+	}
+		available = {
+
+		}
+		completion_reward = {
+			add_political_power = -10
+			add_stability = -0.1
 			}
+		}
+	focus = {
+		id = UKS_The_Union_Forever!
+
+		icon = GFX_BRY_A_Socialist_Indoctrination
+		x = 0
+		y = 2
+		cost = 1
+	prerequisite = {
+		focus = UKS_The_Fascist_lurks
+	}
+		available = {
+
+		}
+		completion_reward = {
+			add_political_power = -10
+			add_stability = -0.1
+			}
+		}
+	focus = {
+		id = UKS_Strike_First
+
+		icon = GFX_UPO_Death_to_All_Nazis
+		x = 0
+		y = 3
+		cost = 1
+	prerequisite = {
+		focus = UKS_The_Union_Forever!
+	}
+		available = {
+    country_exists = GER
+		}
+		completion_reward = {
+    		declare_war_on = {
+		target = FHH
+		type = annex_everything
+    }
+			declare_war_on = {
+		target = GER
+		type = annex_everything
+    }
+			}
+		}
+	focus = {
+	id = UKS_Bring_Ostland_into_the_Fold
+
+		icon = GFX_generic_ostland
+		x = 0
+		y = 4
+		cost = 1
+	prerequisite = {
+		focus = UKS_Strike_First
+	}
+		available = {
+    country_exists = GER
+		}
+		completion_reward = {
+		every_state = {
+		limit = {
+		is_core_of = OST
+		}
+		add_core_of = UKS
+    		declare_war_on = {
+		target = OST
+		type = annex_everything
+    }
+			declare_war_on = {
+		target = BLR
+		type = annex_everything
+    }
+	declare_war_on = {
+		target = MST
+		type = annex_everything
+    }
+	declare_war_on = {
+		target = UPO
+		type = annex_everything
+    }
+	declare_war_on = {
+		target = DST
+		type = annex_everything
+    }
+	declare_war_on = {
+		target = JST
+		type = annex_everything
+    }
+			}
+		}		
+			}
+	focus = {
+		id = UKS_Victory_in_the_Sacred_War
+
+		icon = GFX_UPO_Death_to_All_Nazis
+		x = 0
+		y = 5
+		cost = 1
+	available = {
+	NOT = {
+	country_exists = GER
+	}
+	}
+	prerequisite = {
+		focus = UKS_Bring_Ostland_into_the_Fold
+	}
+		available = {
+    country_exists = GER
+		}
+		completion_reward = {
+    		declare_war_on = {
+		target = FHH
+		type = annex_everything
+    }
+			declare_war_on = {
+		target = GER
+		type = annex_everything
+    }
+			}
+	}
+		
+	focus = {
+		id = UKS_Post_war_Borders
+
+		icon = GFX_UPO_Death_to_All_Nazis
+		x = 0
+		y = 6
+		cost = 1
+	prerequisite = {
+		focus = UKS_Victory_in_the_Sacred_War
+	}
+		available = {
+    country_exists = GER
+		}
+		completion_reward = {
+	add_state_core = 97
+	add_state_core = 5
+	add_state_core = 87
+	add_state_core = 85
+	DEN = {
+	transfer_state = 774
+	transfer_state = 58
+	}
+	ITA = {
+	transfer_state = 98
+	transfer_state = 770
+	}
+	release= CZE
+	CZE = {
+	transfer_state = 69
+	}
+	POL = {
+	transfer_state = 67
+	transfer_state = 66
+	}
+	release= GER
+	release= SWI
+	set_autonomy = { target = GER autonomy_state = autonomy_military_government }
+	transfer_state = 97
+	transfer_state = 5
+	transfer_state = 87
+	transfer_state = 85
+		}
+			}
+		}
 	
+
+
+}

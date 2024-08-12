@@ -1482,8 +1482,16 @@ country_event = {
 		add_state_core = 56
 		add_state_core = 775
 		}
+		SWI = {
+		transfer_state = 3 
+		transfer_state = 151
+		}
 		DEN = {
 		transfer_state = 774
+		transfer_state = 744
+		}
+		NOR = {
+		transfer_state = 94
 		}
 		SSW = {
 		transfer_state = 1814

@@ -1,0 +1,258 @@
+focus_tree = {
+	id = TNO-Turkestani_Legion
+    continuous_focus_position = { x = -40 y = 1310 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = UTL
+			}
+		}
+	
+	
+	focus = {
+		id = UTL_The_Legion_Rests
+		icon = GFX_AMK_the_white_knights
+		x = 3
+		y = 0
+		cost = 3
+
+		available = {
+
+		}
+		completion_reward = {
+			add_manpower = -100
+			}
+		}
+	
+	
+	focus = {
+		id = UTL_Matters_of_The_Leadership
+		icon = GFX_GER_convene_the_parties
+		prerequisite = { focus = UTL_The_Legion_Rests}
+		x = 3	
+		y = 1
+		cost = 5
+		completion_reward = {
+        10 = {
+		set_demilitarized_zone = yes
+		}
+		}
+		}
+	focus = {
+		id = UTL_Han_Triumphant
+		icon = GFX_BOV_The_Third_and_Final_Struggle
+		prerequisite = { focus = UTL_Matters_of_The_Leadership}
+		available = {
+		has_government = national_socialism
+		}
+		x = 1	
+		y = 2
+		cost = 3
+		completion_reward = {
+        10 = {
+		set_demilitarized_zone = yes
+		}
+		}
+	}
+	focus = {
+		id = UTL_Reformists_Triumphant
+		icon = GFX_CAN_secure_vote
+		prerequisite = { focus = UTL_Matters_of_The_Leadership}
+		available = {
+		has_government = fascism
+		}
+		x = 4	
+		y = 2
+		cost = 3
+		completion_reward = {
+        10 = {
+		set_demilitarized_zone = yes
+		}
+		}
+	}
+	focus = {
+		id = UTL_The_Legion_Rides_On
+		icon = GFX_COR_Utilize_The_Black_Market
+		prerequisite = { focus = UTL_Han_Triumphant
+		                 focus = UTL_Reformists_Triumphant}
+		x = 3	
+		y = 3
+		cost = 3
+		completion_reward = {
+        10 = {
+		set_demilitarized_zone = yes
+		}
+		}
+	}
+	focus = {
+		id = UTL_Uzbek_Liberation_War
+		icon = GFX_DST_appeal_to_the_berkerkers
+		prerequisite = { focus = UTL_The_Legion_Rides_On }
+		x = 3	
+		y = 4
+		cost = 3
+		completion_reward = {
+    every_state = {
+	limit = {
+	is_core_of = UZB
+	}
+	add_core_of = UTL
+	}
+			declare_war_on = {
+    	target = KRK
+    	type = annex_everything
+	}
+			declare_war_on = {
+    	target = UZB
+    	type = annex_everything
+	}
+	}
+	}
+	focus = {
+		id = UTL_Tajik_Subjugation
+		icon = GFX_OMO_Bring_The_Sword
+		prerequisite = { focus = UTL_Uzbek_Liberation_War }
+		x = 3	
+		y = 5
+		cost = 3
+	available = {
+    KRK ={
+	has_capitulated = yes
+	}
+	}
+		completion_reward = {
+    every_state = {
+	limit = {
+	is_core_of = TAJ
+	}
+	
+	add_core_of = UTL
+	}
+			declare_war_on = {
+    	target = TAJ
+    	type = annex_everything
+	}
+	}
+	}
+	focus = {
+		id = UTL_March_to_Tashkent
+		icon = GFX_OMS_onwards_to_berlin
+		prerequisite = { focus = UTL_Tajik_Subjugation }
+		x = 3	
+		y = 6
+		cost = 3
+		completion_reward = {
+    every_state = {
+	limit = {
+	is_core_of = KYR
+	}
+	
+	add_core_of = UTL
+	}
+			declare_war_on = {
+    	target = KYR
+    	type = annex_everything
+	}
+	}
+	}
+	
+	focus = {
+			id = UTL_Turkmen_Nightmare
+			icon = GFX_Generic_Dog_Biting
+			prerequisite = { focus = UTL_March_to_Tashkent}
+			x = 3	
+			y = 7
+			cost = 3
+			completion_reward = {
+	    every_state = {
+    	limit = {
+    	is_core_of = TRK
+    	}
+    	
+    	add_core_of = UTL
+    	}
+    			declare_war_on = {
+        	target = TRK
+        	type = annex_everything
+    	}
+    	}
+    	}
+	focus = {
+			id = UTL_South_Turkestan_is_Ours!
+			icon = GFX_TRK_Unite_The_Tribes
+			prerequisite = { focus = UTL_Turkmen_Nightmare }
+			x = 3	
+			y = 8
+			cost = 3
+		available = {
+		NOT = {
+		country_exists = TRK
+		}
+		}
+			completion_reward = {
+    	}
+    	}
+	focus = {
+			id = UTL_Loot_and_Steal
+			icon = GFX_DRL_Gather_our_Loot
+			prerequisite = { focus = UTL_South_Turkestan_is_Ours }
+			x = 3	
+			y = 9
+			cost = 3
+			completion_reward = {
+    	}
+    	}
+	focus = {
+			id = UTL_March_Forwards
+			icon = GFX_Generic_Kazakhstan
+			prerequisite = { focus = UTL_Loot_and_Steal }
+			x = 3	
+			y = 10
+			cost = 3
+			completion_reward = {
+    	}
+    	}
+	focus = {
+			id = UTL_Turkestan_on_the_World_stage
+			icon = GFX_GER_a_moment_of_time
+			prerequisite = { focus = UTL_March_Forwards }
+			x = 3	
+			y = 11
+			cost = 3
+			completion_reward = {
+    	}
+    	}
+	focus = {
+			id = UTL_Afghan
+			icon = GFX_TNO_Generic_Afghanistan
+			prerequisite = { focus = UTL_Turkestan_on_the_World_stage }
+			x = 5	
+			y = 12
+			cost = 3
+			completion_reward = {
+    	}
+    	}
+	focus = {
+			id = UTL_Persian
+			icon = GFX_GER_Pressure_the_Iranians
+			prerequisite = { focus = UTL_Turkestan_on_the_World_stage }
+			x = 3	
+			y = 12
+			cost = 3
+			completion_reward = {
+    	}
+    	}
+	focus = {
+			id = UTL_Golden_Horde_2?
+			icon = GFX_goal_CAU_loyalty_to_reichskommissariat
+			prerequisite = { focus = UTL_Turkestan_on_the_World_stage }
+			x = 1	
+			y = 12
+			cost = 3
+			completion_reward = {
+    	}
+    	}
+		
+		
+		}

@@ -14,7 +14,7 @@ characters = {
 			desc = "POLITICS_KONSTANTIN_ROKOSSOVSKY_DESC"
 			traits = { the_lion_of_siberia }
 			expire = "1999.1.1"
-			ideology = paternalism_stratocracy_subtype
+			ideology = paternalism_left_wing_corporatism_subtype
 			id = -1
 		}
 		field_marshal = {
@@ -42,7 +42,7 @@ characters = {
 			desc = "POLITICS_PAVEL_BATOV_DESC"
 			traits = { the_modern_suvorov }
 			expire = "1999.1.1"
-			ideology = paternalism_stratocracy_subtype
+			ideology = paternalism_transitioning_democracy_subtype
 			id = -1
 		}
 		corps_commander = {

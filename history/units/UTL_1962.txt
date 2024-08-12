@@ -45,7 +45,95 @@ division_template = {
 }
 
 units = {
+
+
 	division = {
+		name = "1. Qaroqchi Diviziya"
+		location = "1632"
+		division_template = "Piyodalar Diviziya"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.4
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+	}
+	division = {
+		name = "1. Qaroqchi Diviziya"
+		location = "1632"
+		division_template = "Piyodalar Diviziya"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.4
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+	}	division = {
+		name = "1. Qaroqchi Diviziya"
+		location = "1632"
+		division_template = "Piyodalar Diviziya"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.4
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+	}
+		division = {
+		name = "1. Qaroqchi Diviziya"
+		location = "1632"
+		division_template = "Piyodalar Diviziya"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.4
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+	}
+		division = {
+		name = "1. Qaroqchi Diviziya"
+		location = "1632"
+		division_template = "Piyodalar Diviziya"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.4
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+	}
+	division = {
+		name = "1. Qaroqchi Diviziya"
+		location = "1632"
+		division_template = "Piyodalar Diviziya"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.4
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+	}	division = {
+		name = "1. Qaroqchi Diviziya"
+		location = "1632"
+		division_template = "Piyodalar Diviziya"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.4
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+	}
+		division = {
+		name = "1. Qaroqchi Diviziya"
+		location = "1632"
+		division_template = "Piyodalar Diviziya"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.4
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+	}
+		division = {
 		name = "1. Qaroqchi Diviziya"
 		location = "1632"
 		division_template = "Piyodalar Diviziya"

@@ -1482,6 +1482,10 @@ country_event = {
 		add_state_core = 56
 		add_state_core = 775
 		}
+	    CRI = {
+		transfer_state = 137
+		transfer_state = 1532
+		}
 		SWI = {
 		transfer_state = 3 
 		transfer_state = 151

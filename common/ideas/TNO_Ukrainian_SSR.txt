@@ -22,20 +22,6 @@ ideas = {
 			}
 		}
 
-		UKS_shumskyis_clique = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea UKS_shumskyis_clique" }
-			picture = UKS_shumskyis_clique
-
-			cancel = { has_country_flag = UKS_wars_over_dumbass }
-			allowed = { always = no }
-			removal_cost = -1
-
-			modifier = {
-				political_power_gain = 0.15
-				resistance_growth_on_our_occupied_states = 0.1
-			}
-		}
-
 		UKS_party_of_many_stripes = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea UKS_party_of_many_stripes" }
 			picture = UKS_A_Party_of_Many_Stripes

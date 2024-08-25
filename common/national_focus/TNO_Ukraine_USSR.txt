@@ -53,7 +53,7 @@ focus_tree = {
 			}
 		}
 	focus = {
-		id = UKS_The_Union_Forever!
+		id = UKS_The_Union_Forever
 
 		icon = GFX_BRY_A_Socialist_Indoctrination
 		x = 0
@@ -73,7 +73,7 @@ focus_tree = {
 	focus = {
 		id = UKS_Strike_First
 
-		icon = GFX_UPO_Death_to_All_Nazis
+		icon = GFX_CAU_by_right_of_aryan_blood
 		x = 0
 		y = 3
 		cost = 1
@@ -143,7 +143,7 @@ focus_tree = {
 	focus = {
 		id = UKS_Victory_in_the_Sacred_War
 
-		icon = GFX_UPO_Death_to_All_Nazis
+		icon = GFX_MCW_you_however_will_have_my_help
 		x = 0
 		y = 5
 		cost = 1
@@ -155,9 +155,6 @@ focus_tree = {
 	prerequisite = {
 		focus = UKS_Bring_Ostland_into_the_Fold
 	}
-		available = {
-    country_exists = GER
-		}
 		completion_reward = {
     		declare_war_on = {
 		target = FHH
@@ -173,7 +170,7 @@ focus_tree = {
 	focus = {
 		id = UKS_Post_war_Borders
 
-		icon = GFX_UPO_Death_to_All_Nazis
+		icon = GFX_USA_Redrawn_Maps
 		x = 0
 		y = 6
 		cost = 1

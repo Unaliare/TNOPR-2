@@ -30,8 +30,8 @@ focus_tree = {
 
 		}
 		completion_reward = {
-			add_political_power = -10
-			add_stability = -0.1
+			
+			
 			}
 		}
 	focus = {
@@ -48,8 +48,8 @@ focus_tree = {
 
 		}
 		completion_reward = {
-			add_political_power = -10
-			add_stability = -0.1
+			
+			
 			}
 		}
 	focus = {
@@ -66,8 +66,8 @@ focus_tree = {
 
 		}
 		completion_reward = {
-			add_political_power = -10
-			add_stability = -0.1
+			
+			
 			}
 		}
 	focus = {
@@ -112,7 +112,9 @@ focus_tree = {
 		limit = {
 		is_core_of = OST
 		}
+		
 		add_core_of = UKS
+		}
     		declare_war_on = {
 		target = OST
 		type = annex_everything
@@ -178,7 +180,9 @@ focus_tree = {
 		focus = UKS_Victory_in_the_Sacred_War
 	}
 		available = {
+	NOT = {
     country_exists = GER
+		}
 		}
 		completion_reward = {
 	add_state_core = 97

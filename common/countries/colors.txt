@@ -523,8 +523,8 @@ MPR = {
 ## Southern Europe ##
 
 ITA = {
-	color = rgb { 109 142 96 }
-	color_ui = rgb { 109 142 96 }
+	color = rgb { 3 61 24 }
+	color_ui = rgb { 3 61 24 }
 }
 GRE = {
 	color = rgb { 121 159 153 }

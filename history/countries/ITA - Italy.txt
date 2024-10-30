@@ -805,7 +805,7 @@ recruit_character = ITA_Umberto_II
 recruit_character = ITA_Edgardo_Sogno
 recruit_character = ITA_Giovanni_De_Lorenzo
 recruit_character = ITA_Achille_Lauro
-# recruit_character = ITA_Julius_Evola
+recruit_character = ITA_Julius_Evola
 
 recruit_character = ITA_Dino_Grandi
 recruit_character = ITA_Giacomo_Acerbo

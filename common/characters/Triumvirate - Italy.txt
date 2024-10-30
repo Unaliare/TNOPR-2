@@ -10,14 +10,7 @@ characters = {
 		country_leader = {
 			desc = "POLITICS_CIANO_DESC"
 			expire = "1999.1.1"
-			ideology = fascism_subtype
-			traits = { }
-			id = -1
-		}
-		country_leader = {
-			desc = "POLITICS_CIANO_DESC"
-			expire = "1999.1.1"
-			ideology = paternalism_subtype
+			ideology = fascism_neofascism_subtype
 			traits = { }
 			id = -1
 		}

@@ -14,6 +14,13 @@ characters = {
 			traits = { }
 			id = -1
 		}
+		country_leader = {
+			desc = "POLITICS_CIANO_DESC"
+			expire = "1983.3.18"
+			ideology = paternalism_transitioning_democracy_subtype
+			traits = { }
+			id = -1
+		}
 	}
 	ITA_Carlo_Scorza = {
 		name = ITA_Carlo_Scorza
